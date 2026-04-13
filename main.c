@@ -18,7 +18,6 @@ int main() {
    Arm arms[numArms]; // Array of Arm structs
 
    printf("Enter the random seed:\n");
-   printf("LKDSJFLDSKFJ");
    scanf("%d", &seed);
 
    /* Seed the random number generator */
