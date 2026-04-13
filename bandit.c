@@ -12,7 +12,12 @@ int SelectArm(Arm arms[], int numArms) {
 
 /* Calculates upper confidence bound value for each arm */
 void CalcUCBPerArm(Arm arms[], int UCBConfidenceValue, int numArms, int step) {
-   // *** <COMPLETE ME> Complete this function definition ***
+   for (int i = 0; i < numArms; i++) {
+      if (arms[i].count > 0) {
+         arms[i].estValue = arms[i].sumReward / arms[i].count;
+         arms[i].UCB = arms[i].estValue + UCBConfidenceValue * sqrt(log(step + 1) / arms[i].count);
+      }
+   }
 }
 
 /* Prints the simulation statistics */
