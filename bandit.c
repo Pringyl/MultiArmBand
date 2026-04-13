@@ -7,7 +7,7 @@
 int SelectArm(Arm arms[], int numArms) {
    // *** <COMPLETE ME> Complete this function definition ***
 
-   return 0; // *** <COMPLETE ME> Replace with the correct return value ***
+   return numArms; // *** <COMPLETE ME> Replace with the correct return value ***
 }
 
 /* Calculates upper confidence bound value for each arm */
